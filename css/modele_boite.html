@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #boite{
+            /* border: 10px dotted #000; 
+            border: 10px dashed #000;
+            border: 10px double #000;
+            border: 10px inset #000;
+            border: 10px outset #000;
+            border-bottom: 10px groove chocolate;
+            border-top: 10px groove chocolate;
+            border-right: 10px groove chocolate;
+            border-left: 10px groove chocolate;*/
+            border: 10px groove chocolate;
+            width: 300px;
+            height: 130px;
+            font-size: 32px;
+            font-family: verdana;
+            /* text-decoration: underline; */
+            color: chocolate;
+            text-shadow: 1px 1px 1px black;
+            /* overflow: scroll;
+            overflow: hidden; //le depassement */
+            /* margin: auto;
+            margin-left: 50px;
+            margin: 50px;  
+            margin: 50px 10px; */
+            margin: 0px 10px 50px 100px; 
+             /* padding: 10px; 
+             padding: 10px 50px;*/
+             padding: 10px 50px 0px 20px;
+            box-sizing: border-box;
+            
+        }
+
+        .custom{
+            /* border: 1px solid #000; */
+            width: 200px;
+            /* height: 200px; */
+            text-align: center;
+            font-family: algerian;
+            padding: 10px 0px;
+            /* border-radius: 10px 20px; */
+            border-bottom-right-radius: 25px;
+            /* border-radius: 50%;
+            padding-top: 15%; */
+            box-sizing: border-box;
+            text-shadow: 3px 3px 3px red;
+            /* box-shadow: inset -3px -3px 3px red; */
+            box-shadow: 2px 2px 3px red, -2px -2px 3px red;
+        }
+        .custom:hover{
+            transition: 3s;
+            box-shadow: inset -3px -3px 3px purple;
+            transform: rotate(-45deg);
+            border-bottom-right-radius: 0px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="boite">Les modèles de boites</div>
+
+    <marquee behavior="" direction="">
+
+        <div class="custom">Transformation</div>
+    </marquee>
+</body>
+</html>
