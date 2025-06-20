@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p, #lien2{
+            font-size: 36px;
+        }
+
+        #p > span{
+            color: red;
+        }
+
+        #p + a{
+            text-decoration: none;
+            color: pink;
+            font-size: 39px;
+        }
+
+        #lien2{
+            text-decoration: none;
+            color: green;
+        }
+
+        a{
+            color: red;
+        }
+
+        .lien{
+            color: cyan;
+        }
+
+        #p2::first-letter{
+            font-family: algerian;
+            font-size: 72px;
+        }
+
+        input[type="email"], input[type="password"]{
+            width: 300px;
+            height: 30px;
+            outline: none;
+        }
+
+        input[type="submit"]{
+            background: green;
+            color: white;
+            border: none;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 3s;
+
+        }
+
+        input[type="submit"]:hover{
+            background: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <p id="p" class="p">
+        <span>element interne</span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus deleniti ratione et in esse odio quaerat minima quae aspernatur error. Nisi alias sed hic vitae dignissimos laborum molestias a dolore.
+    </p>
+    <a href="">Lien 1</a>
+    <p id="p2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, itaque sunt? Vitae ullam eos facere expedita, sit nesciunt nulla, quasi fugit quia debitis at porro. Dolore odio fugiat nulla dicta.
+    </p>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+    <a href="" id="lien2" class="lien" style="color: yellow;">Lien 2</a>
+
+    <form action="">
+        <label for="">Email</label><br>
+        <input type="email"><br><br>
+        <label for="">Mot de passe</label><br>
+        <input type="password"><br><br>
+        <input type="submit" value="S'inscire">
+    </form>
+</body>
+</html>
