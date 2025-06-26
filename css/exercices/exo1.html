@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background: #fdfdba;
+            font-family: Georgia,Arial, "Times New Roman";
+        }
+        .contenu{
+            width: 310px;
+            margin: auto;
+        }
+
+        h1{
+            font-size: 40px;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+        }
+
+        h2{
+            text-align: center;
+            color: rgb(116, 164, 116);
+            font-weight: lighter;
+
+        }
+
+        h2 + p{
+            font-size: 20px;
+        }
+
+        p+p{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            font-style: italic;
+        } 
+
+        blockquote{
+            font-size: 16px;
+        }
+
+        blockquote + p{
+            text-align: right;
+            margin-bottom: 30px;
+        }
+
+        #readmore{
+            margin: auto;
+            width: 140px;
+        }
+
+        a{
+            text-decoration: none;
+            background: rgb(252, 218, 186);
+            padding: 10px;
+            color: rgb(91, 152, 91);
+            font-size: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenu">
+        <h1>Le monde des mots</h1>
+        <h2>Bienvenue sur notre blog</h2>
+        <p>
+            Le texte est partout autour de nous. <br>
+            Dans les livres, sur les murs, dans nos téléphones.
+        </p>
+        <p>
+            Mais savons-nous vraiment le lire?
+        </p>
+
+        <blockquote>
+            &laquo; Les mots sont des fenètres (ou bien ce sont des murs). &raquo;
+        </blockquote>
+        <p>- Marshall Rosenberg</p>
+
+        <div id="readmore">
+            <a href="">Lire la suite</a>
+        </div>
+    </div>
+</body>
+</html>
