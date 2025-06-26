@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #global{
+            border: 1px solid #000;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0px;
+        }
+        #logo, #menu, span{
+            border: 1px solid #000;
+        }
+
+        #logo{
+            width: 20%;
+            height: 50px;
+            /* display: inline; */
+            display: inline-block;
+        }
+
+        #menu{
+            width: 79%;
+            height: 50px;
+            display: inline-block;
+        }
+
+        /* a{
+            display: block;
+        } */
+
+        .navbar{
+            background: #0fd508;
+            width: 100%;
+            border: 1px solid #000;
+            height: 60px;
+        }
+
+        ul{
+            list-style-type: none;
+            float: right;
+            /* border: 1px solid #000; */
+            margin-top: 10px;
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            text-shadow: 1px  1px 1px green;
+        }
+
+        ul li{
+            /* border: 1px solid #000; */
+            width: 150px;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            font-size: 20px;   
+            display: inline-block; 
+            transition: 1s;        
+        }
+
+        ul li:hover{
+            background: black;
+        }
+
+        ul li:hover a{
+            color: green;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div id="global">
+        <div id="logo">Logo</div>
+        <div id="menu">Barre de navigation</div>
+
+        <a href="">Un lien</a> <span>un texte sur la meme ligne</span>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Apropos</a></li>
+                <li><a href="">Formations</a></li>
+                <li><a href="">Competences</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

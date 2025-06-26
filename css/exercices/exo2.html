@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        nav{
+            height: 60px;
+            box-shadow: 1px 1px 4px black;
+        }
+
+        .logo{
+            display: inline-block;
+            width: 20%;
+            height: 100%;
+            font-size: 42px;
+            font-family: algerian;
+            text-shadow: 1px  1px 1px  yellow;
+        }
+
+        #menu{
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        #menu{
+            /* width: 81%; */
+            height: 80%;
+            float: right;
+            margin-right: 20px;
+            /* display: inline-block; */
+        }
+
+        #menu li{
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            font-size: 21px;
+            font-weight: bold;
+            height: 100%;
+            line-height: 50px;
+            text-shadow: 1px 1px 1px #000;
+        }
+
+        #menu li a{
+            text-decoration: none;
+            color: purple;
+        }
+
+        #menu li:hover{
+            transition: 2s;
+            background: purple;
+        }
+
+        #menu li:hover a{
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Cohorte 12</div>
+        <ul id="menu">
+            <li><a href="">Accueil</a></li>
+            <li><a href="">Apropos</a></li>
+            <li><a href="">Formations</a></li>
+            <li><a href="">Compétences</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
