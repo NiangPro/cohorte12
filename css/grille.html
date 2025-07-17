@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #boites{
+            border: 1px solid #000;
+            width: 1000px;
+            margin: auto;
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: 1fr 1fr; */
+            grid-template-columns: 2fr 1fr;
+            row-gap: 50px;
+            column-gap: 50px;
+        }
+
+        .boite{
+            border: 1px solid #000;
+            height: 30px;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div id="boites">
+        <div class="boite">1</div>
+        <div class="boite">2</div>
+        <div class="boite">3</div>
+        <div class="boite">4</div>
+        <div class="boite">5</div>
+    </div>
+
+    <table border="">
+        <tfoot>
+            <tr>
+                <th>PrenomP </th>
+                <th>Nom</th>
+                <th>Age</th>
+            </tr>
+        </tfoot>
+        <thead>
+            <tr>
+                <th>Prenom</th>
+                <th>Nom</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Modou</td>
+                <td>Ndiaye</td>
+                <td>45 ans</td>
+            </tr>
+            <tr>
+                <td>Modou</td>
+                <td>Ndiaye</td>
+                <td>45 ans</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

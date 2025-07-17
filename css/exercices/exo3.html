@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* body{
+            margin: 0px;
+        } */
+        ul{
+            list-style-type: none;
+        }
+        
+        #menu1{
+            width: 450px;
+            padding: 0px;
+            margin: auto;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 15px;
+            box-shadow: 1px 1px 1px grey;
+            background: #000;
+            font-size: 0px;
+
+        }
+
+        #menu1 li{
+            display: inline-block;
+            position: relative;
+            width: 150px;
+            font-size: 18px;
+            box-sizing: border-box;
+            padding-left: 10px;
+            background: linear-gradient(#615f5f,#615f5f, #000,#615f5f, #615f5f);
+        }
+
+        #first{
+            border-radius: 15px 0px 0px 15px;
+        }
+
+        #third{
+            border-radius: 0px 15px 15px 0px;
+        }
+
+        li a{
+            text-decoration: none;
+            color: white;
+        }
+
+         #menu1 li ul{
+            position:absolute;
+            left: -40px;
+            visibility: hidden;
+         }
+
+        #menu1 li ul li{
+            background: #e2e2e2;
+            border: 1px solid white;
+        }
+
+        #menu1 li ul li a{
+            color: black;
+        }
+
+       #menu1 li:hover ul{
+        visibility: visible;
+       }
+
+       #menu1 li:hover{
+        background: #b8b8b8;
+       }
+    </style>
+</head>
+<body>
+    <ul id="menu1">
+        <li id="first"><a href="">Menu 1</a></li>
+        <li>
+            <a href="">Menu 2</a>
+            <ul>
+                <li><a href="">Level 2.1</a></li>
+                <li><a href="">Level 2.2</a></li>
+                <li><a href="">Level 2.3</a></li>
+                <li><a href="">Level 2.4</a></li>
+            </ul>
+        </li>
+        <li id="third"><a href="">Menu 3</a></li>
+    </ul>
+</body>
+</html>

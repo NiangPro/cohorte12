@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 700px;
+            margin: auto;
+        }
+        h1{
+            text-align: center;
+        }
+        .form-group{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* row-gap: 20px; */
+        }
+        label, input, textarea{
+            display: block;
+            width: 90%;
+        }
+
+        input{
+            padding: 10px;
+            margin-bottom: 20px;    
+        }
+
+        textarea{
+            height: 80px;
+            width: 98%;
+            margin-bottom: 30px;
+            resize: none;
+        }
+
+        button{
+            background: blue;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 30px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Conctact Us</h1>
+        <div class="form-group">
+            <div>
+                <label for="">Your Name</label>
+                <input type="text" placeholder="Name">
+            </div>
+            <div>
+                <label for="">Email Address</label>
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div>
+                <label for="">Phone Number</label>
+                <input type="text" placeholder="Phone">
+            </div>
+            <div>
+                <label for="">Organization Name</label>
+                <input type="text" placeholder="Org">
+            </div>
+        </div>
+        <label for="">Enter your Message</label>
+        <textarea name="" id="" placeholder="Type..."></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

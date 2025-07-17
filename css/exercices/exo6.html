@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #navbar{
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 2px 2px 5px grey;
+        }
+        #logo{
+            line-height: 45px;
+            margin-left: 50px;
+            font-size: 40px;
+            text-transform: uppercase;
+            /* font-weight: bold; */
+            font-family: algerian;
+            text-shadow: 1px 1px 2px yellow;
+            letter-spacing: 5px;
+        }
+        #menu{
+            display: flex;
+            list-style-type: none;
+            /* column-gap: 40px; */
+            margin-right: 20px;
+            text-shadow: 1px  1px 1px #000;
+            margin-top:  5px;
+        }
+
+        #menu li{
+            font-size: 20px;
+            font-weight: bold;
+            height: 40px;
+            width: 150px;
+            text-align: center;
+            line-height: 45px;
+        }
+
+        #menu li:hover{
+            background: purple;
+        }
+
+        #menu li:hover a{
+            color: yellow;
+        }
+
+        #menu li:hover ul{
+            visibility: visible;
+        }
+
+        #menu li a{
+            text-decoration: none;
+        }
+
+        #menu li ul{
+            background: purple;
+            list-style-type: none;
+            visibility: hidden;
+        }
+
+        .dropdown li{
+            text-align: left!important;
+            width: 100%!important;
+        }
+
+        .dropdown a{
+            color: yellow;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">Cohorte12</div>
+        <ul id="menu">
+            <li><a href="">Accueil</a></li>
+            <li><a href="">Apropos</a></li>
+            <li><a href="">Formations</a>
+                <ul class="dropdown">
+                    <li><a href="">Dev Web</a></li>
+                    <li><a href="">Infographie</a></li>
+                    <li><a href="">I A</a></li>
+                </ul>
+            </li>
+            <li><a href="">Competences</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

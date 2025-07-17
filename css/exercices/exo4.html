@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            overflow-x: hidden;
+        }
+        header{
+            width: 100%;
+            height: 50px;
+            border: 1px solid #000;
+            background: orange;
+            color: green;
+            text-align: center;
+            line-height: 45px;
+        }
+
+        #content{
+            border: 1px solid #000;
+            width: 100%;
+            height: 450px;
+            padding: 20px 0px;
+            box-sizing: border-box;
+        }
+        footer{
+            border: 1px solid #000;
+            height: 75px;
+            text-align: center;
+            background: lightgreen;
+            color: darkgreen;
+            line-height: 45px;
+        }
+        nav{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            display: inline-block;
+            transform: translateY(-230px);
+            background: rgb(166, 197, 244);
+        }
+        #sections{
+            display: inline-block;
+            width: 1140px;
+            padding: 30px;
+            box-sizing: border-box;
+            margin-top: -20px;
+        }
+
+        #part1{ 
+            border: 1px solid #000;
+            height: 170px;
+            background: rgb(216, 215, 215);
+        }
+
+        #part1 article{
+            display: inline-block;
+            width: 600px;
+            border: 1px solid #000;
+            height: 115px;
+            background: rgb(84, 84, 148);
+            transform: translateY(-70px);
+            margin-left: 20px;
+        }
+        #part1 #aside{
+            display: inline-block;
+            width: 440px;
+            height: 100px;
+        }
+
+        #aside aside{
+            width: 100%;
+            height: 45px;
+            border: 1px solid #000;
+            background: lightcoral;
+            margin-top: 20px;
+        }
+
+        #part2{
+            background: rgb(198, 198, 198);
+            border: 1px solid #000;
+            margin-top: 20px;
+            height: 150px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #part2 aside{
+            border: 1px solid #000;
+            width: 300px;
+            height: 100px;
+            margin-left: auto;
+            background: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <header> header</header>
+    <section id="content">
+        <nav> nav </nav>
+        <div id="sections">
+            <section id="part1">
+                <div>section</div>
+                <article> article</article>
+                <div id="aside">
+                    <aside>aside</aside>
+                    <aside>aside</aside>
+                </div>
+            </section>
+            <section id="part2">
+                section 
+                <aside> aside</aside>
+            </section>
+        </div>
+    </section>
+    <footer>footer</footer>
+</body>
+</html>
